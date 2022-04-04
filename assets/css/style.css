@@ -260,7 +260,7 @@ ul li {
 } */
 
 .lorem {
-  line-height-: 3rem;
+  line-height: 3rem;
 }
 
 .parallax-container > p {
@@ -580,13 +580,6 @@ section.pastor-section {
   color: #fff;
 }
 
-.page-right {
-  display: flex;
-  justify-content: end;
-}
-
-@media (min-width: 1000px) {
-  #pastor-right {
-    position: relative;
-  }
+#page-right {
+  min-width: 100%; 
 }
