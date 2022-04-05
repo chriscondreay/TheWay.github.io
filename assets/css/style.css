@@ -480,4 +480,29 @@ img {
   .split {
     flex-direction: row;
   }
+
+  p.p-content {
+    font-size: 1.5rem;
+    max-width: 50%;
+  }
+
+  p.p-content {
+    line-height: 1.5em;
+  }
+}
+
+@media (min-width: 62.5em) {
+
+h2.p-content {
+  font-size: 2rem;
+}
+
+  p.p-content {
+    font-size: 1.75rem;
+    max-width: 70%;
+    line-height: 1.5em;
+  }
+
+  .pastor-img {
+  }
 }
