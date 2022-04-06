@@ -13,8 +13,8 @@
           box-sizing: inherit;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   padding: 0;
