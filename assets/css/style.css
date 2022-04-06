@@ -5,18 +5,25 @@
 }
 
 /* Basic Style */
-
+a::before, a::after, a:hover, a {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
 
 *, ::before, ::after {
   box-sizing: border-box;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  -webkit-transition-property: all;
+  /* -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
   -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+          transition-timing-function: ease; */
   padding: 0;
   margin: 0;
 }
@@ -384,7 +391,7 @@ img.wed-image {
   font-weight: 400;
   line-height: 45px;
   margin: 0 0 2em;
-  max-width: 160px;
+  max-width: 13.75rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -427,12 +434,15 @@ img.wed-image {
 
 .btn-2:hover:after,
 .btn-2:hover:before {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   border-color: #000;
-  -webkit-transition: width 350ms ease-in-out;
-  transition: width 350ms ease-in-out;
   width: 70%;
+  transition: width 350ms ease-in-out;
+  -webkit-transition: width 350ms ease-in-out;
+  -moz-transition: width 350ms ease-in-out;
+  -ms-transition: width 350ms ease-in-out;
+  -o-transition: width 350ms ease-in-out;
 }
 
 .btn-2:hover:before {
@@ -524,6 +534,11 @@ h2.p-content {
 .btn--container {
   display: block;
   padding: 0;
+  transform: translate(-2.1875em, 0);
+  -webkit-transform: translate(-2.1875em, 0);
+  -moz-transform: translate(-2.1875em, 0);
+  -ms-transform: translate(-2.1875em, 0);
+  -o-transform: translate(-2.1875em, 0);
 }
 
 /* @media (min-width: 600px) {
@@ -554,11 +569,11 @@ h2.p-content {
 .cntc-btn {
   color: var(--clr-neutral-100);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 45px;
   margin: 0 0 2em;
-  max-width: 160px;
+  max-width: 12.75rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -588,7 +603,7 @@ h2.p-content {
 .btn--2:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 0.08125rem solid rgba(255, 255, 255, 0);
   bottom: 0px;
   content: " ";
   display: block;
