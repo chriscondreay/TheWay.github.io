@@ -477,9 +477,12 @@ p {
   color: var(--clr-neutral-100);
 }
 
+#image {
+  text-align: center;
+}
+
 img {
-  display: block;
-  max-width: 100%;
+  width: 70%;
 }
 
 .split {
@@ -487,14 +490,18 @@ img {
   flex-direction: column;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 48.125em) {
   .split {
     flex-direction: row;
   }
 
+  .split > * {
+    flex-basis: 100%;
+  }
+
   p.p-content {
     font-size: 1.5rem;
-    max-width: 50%;
+    max-width: 80%;
   }
 
   p.p-content {
@@ -503,6 +510,13 @@ img {
 }
 
 @media (min-width: 62.5em) {
+.pastor-img {
+  width: 70%;
+}
+
+#image {
+  text-align: right;
+}
 
 h2.p-content {
   font-size: 2rem;
