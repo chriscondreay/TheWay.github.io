@@ -1,0 +1,130 @@
+/* Basic Style */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-header {
+  padding: 0 15px;
+  background: #D7CDB6;
+  font-weight: bolder;
+}
+
+.item {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+#logo {
+  display: block;
+  width: 100px;
+}
+
+/* Mobile Menu*/
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: -5px 0px;
+}
+
+.nav li a {
+  display: block;
+  padding: 15px 5px;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.toggle {
+  order: 1;
+  font-size: 30px;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+/* Tablet Menu */
+
+@media all and (min-width: 700px) {
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+
+/* Desktop Menu */
+
+@media all and (min-width: 960px) {
+  .item {
+    order: 0;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+}
+
+/* Main */
+
+main {
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+h1, h2 {
+  color: red;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  word-spacing: 1rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-section > h2 {
+  flex: 0 0 20%
+}
+
+ol > li {
+  list-style-type: inherit;
+}
