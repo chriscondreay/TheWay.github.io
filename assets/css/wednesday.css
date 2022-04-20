@@ -108,18 +108,25 @@ li {
 .sub-section {
   padding: 3em;
   background: rgb(208, 236, 208);
+  height: 100vh;
 }
 
 .content {
   text-align: center;
 }
 
-.h1 {
-  font-size: 3rem;
+.h-top {
+  font-size: 3.5rem;
   font-weight: 300;
-  padding: 0.625em;
+  padding: 1.625em 0 1.625em;
+}
+
+.h-bottom {
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 1.625em 0;
 }
 
 .h-top {
-  border-bottom: 0.0625rem solid #000;
+  border-bottom: 0.0625rem outset #000;
 }
