@@ -5,7 +5,7 @@
   --primary-light: #fff;
 }
 
-* {
+*, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -105,41 +105,34 @@ li {
 }
 
 /* Hero, Top Section */
-section::after {
-  z-index: 10000;
-}
 
 #ocean-bg {
-  position: absolute;
-  width: 100%;
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../image/foggy-ocean.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.sub-section {
-  padding: 0.625em;
-  /* background: rgb(208, 236, 208); */
-  height: 90vh;
-}
-
-.content {
-  font-size: 2.25rem;
-  position: relative;
+h1, span {
+  display: block;
   text-align: center;
-  margin: 1.5em 0 0;
+  font-weight: 300;
+  font-size: 3.5rem;
 }
 
-.h-top {
-  font-weight: 300;
-  padding: 1.625em 0 1.625em;
+.h1 {
+  padding: 2em 0.0625em;
 }
 
 #line {
-  border: 0.00625rem solid black;
-  margin: 0 0.635em;
+  border-bottom: solid 0.0625em var(--bg-black);
+  margin: 0 1em;
 }
 
-.h-bottom {
-  font-weight: 300;
-  padding: 1.625em 0;
+h2,
+p {
+  
 }
 
