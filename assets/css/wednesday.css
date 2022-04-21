@@ -2,7 +2,7 @@
   --dark-grey: #5c5c5c;
   --bg-black: #000;
 
-  --primary-light: #fff
+  --primary-light: #fff;
 }
 
 * {
@@ -20,13 +20,13 @@ body {
 
 
 a {
-  color: #000000;
+  color: var(--bg-black);
   text-decoration: none;
 }
 
 .main-header {
   padding: 0 15px;
-  background: #D7CDB6;
+  background: var(--primary-light);
   font-weight: bolder;
 }
 
@@ -36,6 +36,7 @@ a {
 }
 
 #logo {
+  padding: 2px 0;
   display: block;
   width: 100px;
 }
@@ -104,29 +105,41 @@ li {
 }
 
 /* Hero, Top Section */
+section::after {
+  z-index: 10000;
+}
+
+#ocean-bg {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+}
 
 .sub-section {
-  padding: 3em;
-  background: rgb(208, 236, 208);
-  height: 100vh;
+  padding: 0.625em;
+  /* background: rgb(208, 236, 208); */
+  height: 90vh;
 }
 
 .content {
+  font-size: 2.25rem;
+  position: relative;
   text-align: center;
+  margin: 1.5em 0 0;
 }
 
 .h-top {
-  font-size: 3.5rem;
   font-weight: 300;
   padding: 1.625em 0 1.625em;
 }
 
+#line {
+  border: 0.00625rem solid black;
+  margin: 0 0.635em;
+}
+
 .h-bottom {
-  font-size: 4rem;
   font-weight: 300;
   padding: 1.625em 0;
 }
 
-.h-top {
-  border-bottom: 0.0625rem outset #000;
-}
