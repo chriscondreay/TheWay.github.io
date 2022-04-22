@@ -107,12 +107,11 @@ li {
 /* Hero, Top Section */
 
 #ocean-bg {
-  display: flex;
-  justify-content: center;
   background-image: url('../image/foggy-ocean.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1, span {
@@ -127,9 +126,21 @@ h1, span {
 }
 
 #line {
-  border-bottom: solid 0.0625em var(--bg-black);
+  border-bottom: solid 0.0625rem var(--bg-black);
   margin: 0 1em;
 }
+
+@media all and (min-width: 67.5em) {
+  h1, span {
+    font-size: 5rem;
+  }
+
+  .h1 {
+    padding: 1.5em 0;
+  }
+}
+
+/* Baptism section */
 
 h2,
 p {
@@ -145,4 +156,6 @@ p {
   font-size: 1.25rem;
   line-height: 30px;
 }
+
+
 
