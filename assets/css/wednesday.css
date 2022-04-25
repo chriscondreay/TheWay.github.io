@@ -1,5 +1,5 @@
 :root {
-  --dark-grey: #5c5c5c;
+  --light-grey: #e1e1e1;
   --bg-black: #000;
 
   --primary-light: #fff;
@@ -107,11 +107,13 @@ li {
 /* Hero, Top Section */
 
 #ocean-bg {
+  min-height: 100%;
   background-image: url('../image/foggy-ocean.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 
 h1, span {
@@ -122,7 +124,7 @@ h1, span {
 }
 
 .h1 {
-  padding: 2em 0.0625em;
+  padding: 2.5em 0.0625em;
 }
 
 #line {
@@ -140,22 +142,58 @@ h1, span {
   }
 }
 
+@media all and (min-width: 90em) {
+  h1, spam {
+    font-size: 6.125rem;
+  }
+
+  .h1 {
+    padding: 1.5em;
+  }
+}
+
 /* Baptism section */
+.section-b {
+  margin: 1rem auto;
+  max-width: 85%;
+  height: auto;
+}
+
+.info {
+  background: var(--light-grey);
+}
 
 h2,
 p {
   font-weight: 300;
 }
-
 h2 {
+  font-size: 3rem;
   padding: 0.625em;
   text-align: center;
 }
-
 p {
-  font-size: 1.25rem;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 40px;
+  padding: 0.5em 1em;
 }
 
+#house {
+  max-width: 90%;
+  margin-bottom: 2.5em;
+}
 
+.image {
+  text-align: center;
+}
+
+.sign-up {
+  margin-inline: 25px;
+}
+
+.sign-up a {
+  text-decoration: none;
+  border: 1px solid var(--bg-black);
+  padding: 10px 15px;
+}
 
