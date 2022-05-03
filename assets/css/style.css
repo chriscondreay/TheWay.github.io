@@ -3,6 +3,11 @@
   src: url(../fonts/Hollic\ Brush\ -\ DEMO.otf);
 }
 
+@font-face {
+  font-family: "FrontLine";
+  src: url(../fonts/FrontlineRegular-z8eG1.ttf);
+}
+
 :root {
   --clr-neutral-900: #000;
   --clr-neutral-700: #2A2A2A;
@@ -272,7 +277,7 @@ h3,
 p {
   padding: 10px 10px;
   margin: 0 auto;
-  text-align: right;
+  text-align: center;
 }
 
 section.section-c {
@@ -281,6 +286,8 @@ section.section-c {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 70vh;
 }
 
 #header {
@@ -289,14 +296,22 @@ section.section-c {
   color: #fff;
 }
 
+#text {
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.h3,
+.p-text {
+  font-size: 1.5rem;
+} 
+
 .h1 {
   font-size: 4.55rem;
   font-weight: 100;
 }
 
-#text {
-
-}
 
 @media all and (min-width: 960px) {
   section.section-c {
@@ -306,7 +321,6 @@ section.section-c {
   }
 
   #header {
-    padding: 0.4em;
     width: 45vw;
     transform: translate(0em, 9em);
     -webkit-transform: translate(0em, 9em);
@@ -318,11 +332,13 @@ section.section-c {
   #text {
     color: #fff;
     max-width: 375px;
-    transform: translate(0em, 29em);
-    -webkit-transform: translate(0em, 29em);
-    -moz-transform: translate(0em, 29em);
-    -ms-transform: translate(0em, 29em);
-    -o-transform: translate(0em, 29em);
+    text-align: right;
+    right: 0;
+    transform: translate(0em, -1em);
+    -webkit-transform: translate(0em, -1em);
+    -moz-transform: translate(0em, -1em);
+    -ms-transform: translate(0em, -1em);
+    -o-transform: translate(0em, -1em);
 }
 
   .h1 {
@@ -347,4 +363,52 @@ section.section-c {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.circles {
+  width: 300px;
+  height: 300px;
+  background: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 1;
+  position: relative;
+  margin: 10px auto;
+}
+
+.circles::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.circle-txt {
+  font-weight: 500;
+  position: absolute;
+  bottom: 41%;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.mid-txt   {
+  position: absolute;
+}
+
+#last {
+  top: 60%;
+}
+
+.second-txt {
+  left: 0;
+  top: 52%;
+}
+
+.txt-wrapper {
+  font-family: "FrontLine";
+  position: relative;
+  top: 50%;
 }
