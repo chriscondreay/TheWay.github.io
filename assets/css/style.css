@@ -412,7 +412,7 @@ section.section-c {
 }
 
 #mid {
-  top: -1rem;
+  top: -1.5rem;
 }
 
 #last {
@@ -435,21 +435,6 @@ section.section-c {
   }
 
   .circles {
-    width: 500px;
-    height: 500px
-  }
-
-  .circle-txt {
-    font-size: 5.5rem;
-  }
-}
-
-@media all and (min-width: 960px) {
-  .circle-container {
-    padding: 10em 0;
-  }
-
-  .circles {
     width: 350px;
     height: 350px
   }
@@ -457,11 +442,16 @@ section.section-c {
   .circle-txt {
     font-size: 4.5rem;
   }
+
+  #mid {
+    top: -2.25rem;
+  }
 }
 
 .info-section {
   background: #ffffd7;
-  height: 100vh;
+  height: 60rem;
+  position: relative;
 }
 
 h1.title-head {
@@ -469,7 +459,18 @@ h1.title-head {
   font-size: 2.5rem;
 }
 
-.text {
+.info-container {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) ;
+  -webkit-transform: translate(0, -50%) ;
+  -moz-transform: translate(0, -50%) ;
+  -ms-transform: translate(0, -50%) ;
+  -o-transform: translate(0, -50%) ;
+}
+
+.info-text {
   font-size: 1.5rem;
   line-height: 1.5
 }
@@ -478,4 +479,39 @@ h1.title-head {
 .answer {
   padding: 0.625rem 0;
   line-height: 1.5
+}
+
+@media all and (min-width: 580px) {
+  .info-container {
+    padding: 0 5em;
+    top: 50%;
+    transform: translate(0, -50%) ;
+    -webkit-transform: translate(0, -50%) ;
+    -moz-transform: translate(0, -50%) ;
+    -ms-transform: translate(0, -50%) ;
+    -o-transform: translate(0, -50%) ;
+  }
+}
+
+@media all and (min-width: 960px) {
+  h1.title-head {
+    font-size: 2.75rem;
+  }
+
+  .info-text {
+    font-size: 1.5rem;
+    line-height: 1.75;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  .info-container {
+    padding: 0 5em;
+    top: 40%;
+    transform: translate(0, -60%) ;
+    -webkit-transform: translate(0, -60%) ;
+    -moz-transform: translate(0, -60%) ;
+    -ms-transform: translate(0, -60%) ;
+    -o-transform: translate(0, -60%) ;
+}
 }
