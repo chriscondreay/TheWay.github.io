@@ -514,7 +514,7 @@ h1.title-head {
   }
 }
 
-.left-side {
+.bible {
   display: none;
 }
 
@@ -529,4 +529,15 @@ h1.title-head {
 
 .questions {
   padding: 3em 0;
+}
+
+@media all and (min-width: 960px) {
+  .container {
+    display: flex;
+  }
+
+  .bible {
+    display: block;
+    width: 100%;
+  }
 }
