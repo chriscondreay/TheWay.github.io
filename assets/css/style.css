@@ -475,12 +475,6 @@ h1.title-head {
   line-height: 1.5
 }
 
-.question,
-.answer {
-  padding: 0.625rem 0;
-  line-height: 1.5
-}
-
 @media all and (min-width: 580px) {
   .info-container {
     padding: 0 5em;
@@ -494,10 +488,14 @@ h1.title-head {
 }
 
 @media all and (min-width: 960px) {
+  .info-section {
+    height: 55em;
+  }
+  
   h1.title-head {
     font-size: 2.75rem;
   }
-
+  
   .info-text {
     font-size: 1.5rem;
     line-height: 1.75;
@@ -507,11 +505,28 @@ h1.title-head {
 
   .info-container {
     padding: 0 5em;
-    top: 40%;
+    top: 55%;
     transform: translate(0, -60%) ;
     -webkit-transform: translate(0, -60%) ;
     -moz-transform: translate(0, -60%) ;
     -ms-transform: translate(0, -60%) ;
     -o-transform: translate(0, -60%) ;
+  }
 }
+
+.left-side {
+  display: none;
+}
+
+.question {
+  padding: 0.625em 0;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.answer {
+  line-height: 2
+}
+
+.questions {
+  padding: 3em 0;
 }
