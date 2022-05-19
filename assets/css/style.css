@@ -532,12 +532,19 @@ h1.title-head {
 }
 
 @media all and (min-width: 960px) {
-  .container {
-    display: flex;
+
+  .questions {
+    min-width: 35rem;
+  }
+
+  .container-qa {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 79.5rem;
   }
 
   .bible {
-    display: block;
-    width: 100%;
+    display: inline;
+    width: 70%;
   }
 }
