@@ -529,22 +529,70 @@ h1.title-head {
 
 .questions {
   padding: 3em 0;
+  text-align: center;
 }
 
-@media all and (min-width: 960px) {
+button {
+  background: antiquewhite;
+  font-family: "Hollic";
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0.625em 1em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  cursor: pointer;
+}
+
+@media all and (min-width: 1000px) {
+
+  .section-qa {
+    height: 49em
+  }
 
   .questions {
     min-width: 35rem;
+    text-align: center
+  }
+
+  .question,
+  .answer {
+    text-align: left;
+    padding: 0.625em 0;
   }
 
   .container-qa {
-    margin-inline: auto;
+    margin: auto;
     width: 100%;
-    max-width: 79.5rem;
+    max-width: 75.5rem;
   }
 
   .bible {
     display: inline;
     width: 70%;
+    padding-left: 1em;
   }
+}
+
+.span {
+  display: block;
+  text-align: center;
+}
+
+.yes {
+  margin: auto;
+  text-align: center
+}
+
+.group {
+  width: 70%;
+  height: 70%;
+}
+
+footer {
+  background: black;
 }
