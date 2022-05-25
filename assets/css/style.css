@@ -532,7 +532,7 @@ h1.title-head {
   text-align: center;
 }
 
-button {
+.btn {
   background: antiquewhite;
   font-family: "Hollic";
   font-weight: 100;
@@ -591,6 +591,56 @@ button {
 .group {
   width: 70%;
   height: 70%;
+}
+
+#bold {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.span {
+  padding-bottom: 0.625em;
+}
+
+.baptism {
+  position: relative;
+  height: 100vh;
+  background-image: url(../image/ocean.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#pg {
+  
+}
+
+.center {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.center button {
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+  border: 1px solid #fff;
+  padding: 0.325em 2em;
+  margin: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 footer {
