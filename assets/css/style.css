@@ -13,6 +13,23 @@
   src: url(../fonts/Amalfi\ Coast.ttf);
 }
 
+@font-face {
+  font-family: "Ramilla-black";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_black.otf);
+}
+@font-face {
+  font-family: "Ramilla-light";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_light.otf);
+}
+@font-face {
+  font-family: "Ramilla-bold";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_bold.otf);
+}
+@font-face {
+  font-family: "Ramilla-regular";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_regular.otf);
+}
+
 :root {
   --clr-neutral-900: #000;
   --clr-neutral-700: #2A2A2A;
@@ -606,19 +623,23 @@ h1.title-head {
 .baptism {
   position: relative;
   height: 100vh;
+  background-color: rgba(37, 37, 37, 0.289);
   background-image: url(../image/ocean.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 #heading {
-  font-size: 2rem;
+  font-family: "Ramilla-black";
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
 #pg {
   
+  font-size: 1.75rem;
 }
 
 .center {
@@ -634,13 +655,32 @@ h1.title-head {
 .center button {
   background: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 100;
-  border: 1px solid #fff;
-  padding: 0.325em 2em;
-  margin: 1em;
+  border: 4px solid #fff;
+  padding: 0.5em 1.5em;
+  margin-top: 1.5em;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+@media all and (min-width: 960px) {
+  #heading {
+    font-size: 8rem;
+    width: 100%;
+    max-width: 50rem;
+    line-height: 1;
+  }
+
+  #pg {
+    font-size: 1.875rem;
+    max-width: 43.75rem;
+    font-weight: 600;
+  }
+
+  .center button {
+    padding: 0.85em 4.5em;
+  }
 }
 
 footer {
