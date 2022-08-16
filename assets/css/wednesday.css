@@ -1,33 +1,85 @@
-:root {
-  --light-grey: #e1e1e1;
-  --bg-black: #000;
+@font-face {
+  font-family: "Hollic";
+  src: url(../fonts/Hollic\ Brush\ -\ DEMO.otf);
+}
 
-  --primary-light: #fff;
+@font-face {
+  font-family: "FrontLine";
+  src: url(../fonts/FrontlineRegular-z8eG1.ttf);
+}
+
+@font-face {
+  font-family: "Amalfi";
+  src: url(../fonts/Amalfi\ Coast.ttf);
+}
+
+@font-face {
+  font-family: "Ramilla-black";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_black.otf);
+}
+@font-face {
+  font-family: "Ramilla-light";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_light.otf);
+}
+@font-face {
+  font-family: "Ramilla-bold";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_bold.otf);
+}
+@font-face {
+  font-family: "Ramilla-regular";
+  src: url(../fonts/TT_Ramillas/Fontspring-DEMO-tt_ramillas_regular.otf);
+}
+
+:root {
+  --clr-neutral-900: #000;
+  --clr-neutral-700: #2A2A2A;
+  --clr-neutral-100: #fff;
+}
+
+/* Basic Style */
+a::before, a::after, a:hover, a {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 *, ::before, ::after {
   box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  /* -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease; */
   padding: 0;
   margin: 0;
 }
-
+html,
 body {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
   width: 100%;
 }
 
+body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 
 a {
-  color: var(--bg-black);
+  color: #000;
   text-decoration: none;
 }
 
-.main-header {
+.header {
   padding: 0 15px;
-  background: var(--primary-light);
-  font-weight: bolder;
 }
 
 .item {
@@ -38,7 +90,7 @@ a {
 #logo {
   padding: 2px 0;
   display: block;
-  width: 100px;
+  width: 6.25rem;
 }
 
 /* Mobile Menu*/
@@ -55,7 +107,7 @@ a {
 .nav li a {
   display: block;
   padding: 15px 5px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 li {
@@ -64,7 +116,7 @@ li {
 
 .toggle {
   order: 1;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .item {
@@ -99,8 +151,11 @@ li {
   .item {
     order: 0;
     position: relative;
-    display: block;
     width: auto;
+  }
+
+  .nav {
+    justify-content: space-around;
   }
 }
 
