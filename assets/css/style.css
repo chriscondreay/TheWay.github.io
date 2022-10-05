@@ -264,6 +264,28 @@ li {
   }
 }
 
+/* Video Styles */
+
+.vimeo-title {
+  background: #e9cea0;
+}
+
+.vimeo-title::after,
+.vimeo-title::before {
+  content: '';
+  display: block;
+  height: .5px;
+  width: 5em;
+  background: #000;
+  margin: 0.7em auto 0.5em;
+}
+
+iframe {
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #2A2A2A;
+}
+
 .icon-section {
   background: #72634f;
   text-align: center;

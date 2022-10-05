@@ -1,6 +1,6 @@
 const toggle = document.querySelector('.toggle');
 const nav = document.querySelector('.nav');
-const btn = document.querySelector('button')
+const btn = document.querySelector('.button')
 
 const toggleNav = () => {
   if (nav.classList.contains('active')) {
@@ -18,4 +18,4 @@ const handleBtn = () => {
 
 toggle.addEventListener('click', toggleNav, false);
 
-button.addEventListener('click', handleBtn, false);
+btn.addEventListener('click', handleBtn, false);
